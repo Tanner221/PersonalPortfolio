@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  .img_custom{
+    max-width: 75%;
+    height: auto;
+  }
+  .ln_logo{
+    max-width: 2%;
+    height: auto
+  }
+</style>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Tanner Robinson Portfolio</title>
+
+  {% load static %}
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/small-business.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'index' %}">Tanner Robinson</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Heading Row -->
+    <div class="row align-items-center my-5">
+      <div class="col-lg-7">
+        <img class="img_custom rounded mb-4 mb-lg-0" src="{% static 'images/profilePic.jpeg' %}" alt="Profile Picture">
+      </div>
+      <!-- /.col-lg-8 -->
+      <div class="col-lg-5">
+        <h1 class="font-weight-light">Hi! I'm Tanner!</h1>
+        <p>Welcome to my portfolio. It is so nice to meet you! I'm currently a computer science student at BYU-Idaho experienced in C/C++, Python and Web development. Click below to learn a little more about me</p>
+        <a class="btn btn-primary" href="{% url 'about' %}">About Me</a>
+      </div>
+      <!-- /.col-md-4 -->
+    </div>
+    <!-- /.row -->
+
+    <!-- Call to Action Well -->
+    <div class="card text-white bg-secondary my-5 py-4 text-center">
+      <div class="card-body">
+        <p class="text-white m-0">Follow me On Linkedin or look at my code on GitHub:</p>
+        <a href="https://www.linkedin.com/in/tanner-m-robinson/" target="blank"><img class="ln_logo" src="{% static 'images/Li-In-Bug.png' %}" alt="LinkedIn "></a>
+        <a href="https://www.github.com/Tanner221"><img class="ln_logo" src="{% static 'images/github_PNG63.png' %}" alt="github"></a>
+      </div>
+    </div>
+
+    <!-- Content Row -->
+    <div class="row">
+      <div class="col-md-6 mb-7">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">Projects</h2>
+            <p class="card-text">In this portfolio I've included some completed educational projects. These projects include web development and object oriented programs.</p>
+          </div>
+          <div class="card-footer">
+            <a href="{% url 'projects' %}" class="btn btn-primary btn-sm">More Info</a>
+          </div>
+        </div>
+      </div>
+      <!-- /.col-md-4 -->
+      <div class="col-md-6 mb-7">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">Contact Me</h2>
+            <p class="card-text">Interested in contacting me? Feel free to use the fillable form in the contact page. I'd love to hear from you!</p>
+          </div>
+          <div class="card-footer">
+            <a href="{% url 'contact' %}" class="btn btn-primary btn-sm">More Info</a>
+          </div>
+        </div>
+      </div>
+      <!-- /.col-md-4 -->
+      <!-- /.col-md-4 -->
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Tanner Robinson 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+
+</body>
+
+</html>

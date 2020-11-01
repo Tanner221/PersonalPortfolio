@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  .img_custom{
+    max-width: 75%;
+    height: auto;
+  }
+  .ln_logo{
+    max-width: 2%;
+    height: auto
+  }
+</style>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Educational Projects</title>
+
+  {% load static %}
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/small-business.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'index' %}">Tanner Robinson</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'index' %}">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'projects' %}">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Heading Row -->
+    <div class="text-center row align-items-center my-5">
+      <h1 style="text-align: center;">Projects</h1>
+    </div>
+    <!-- /.row -->
+
+    <!-- Content Row -->
+    <div class="row">
+      <div class="col-sm-7">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">Asteroids</h2>
+            <p class="card-text">This project was a take on the classic atari game "Asteroids". This is a simplified version that is playable. The goal of the user is to destroy all the asteroids and survive without getting hit by an asteroid. This project was built using C++ and graphics from OpenGL</p>
+          </div>
+        </div>
+      </div>
+      <!-- /.col-md-4 -->
+      <div class="col-sm-5">
+        <div class="card h-200">
+          <div>
+            <img class="img_custom img-fluid" src="{% static 'images/Asteroids.png' %}" alt="test">
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-7">
+        <br>
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">Skeet</h2>
+            <p class="card-text">This is another game created in C++ and using OpenGL for graphics. The object of this game is to move your rifle (the rectangle in teh bottom corner) and shoot the birds. The birds change color and display numbers based on the amount of health they have. Be careful not to hit the sacred bird!</p>
+          </div>
+        </div>
+      </div>
+      <!-- /.col-md-4 -->
+      <div class="col-sm-5">
+        <br>
+        <div class="card h-200">
+          <div>
+            <img class="img_custom img-fluid" src="{% static 'images/skeet.png' %}" alt="test">
+          </div>
+        </div>
+      </div>
+      
+      
+      <!-- /.col-md-4 -->
+      <!-- /.col-md-4 -->
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <br>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Tanner Robinson 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  .img_custom{
+    max-width: 100%;
+    height: auto;
+  }
+  .ln_logo{
+    max-width: 2%;
+    height: auto
+  }
+</style>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>About Tanner</title>
+
+  {% load static %}
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/small-business.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'index' %}">Tanner Robinson</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'index' %}">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'about' %}">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+  <!-- Page Content -->
+  <br>
+  <br>
+  <div>
+    <h1>About Me:</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-6 mb-7">
+      <div class="h-100">
+        <div class="card-body">
+          <p>Hi! My name is Tanner Robinson. I am from Washington State and I am currently a student at BYU Idaho. I’m studying computer science and so far, I am loving it.</p>
+          <p>I am a people person, so I love to work with and around people. For the past few seasons, I have been a lifeguard. Lifeguarding has helped me to develop skills that I am ready to apply to the workforce. I have learned to be responsible and to have good communication skills. I believe that it is important to speak to people professionally when on the job. I also learned to be self-sufficient. Working hard doesn’t mean I always have to go to my boss and ask for help in making decisions. I also learned how to keep my head cool despite stressful situations. Lifeguarding is also all about working as a team, and I value those opportunities I am given to work with great people. While working as a lifeguard I was able to develop leadership skills. Those skills I used when I went to Argentina for two years as a volunteer. Because of that, I speak Spanish fluently.</p>
+          <p>In my studies I have become proficient in C/C++ and object-oriented programming. I’ve also had the opportunity to start working in web development and with other languages such as Python and Java. I love solving problems and I’m a hard worker. So nice to meet you!</p>
+        </div>
+      </div>
+    </div>
+    <!-- /.col-md-4 -->
+    <div class="col-md-6 mb-7">
+      <div class="h-100">
+        <div class="card-body">
+          <img class="img-fluid rounded" src="{% static 'images/horsePic.jpeg' %}">
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Tanner Robinson 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+
+</body>
+
+</html>
