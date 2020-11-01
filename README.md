@@ -12,7 +12,7 @@ Next, creaete your website. Add your pages into a folder entiltled "templates" i
 ## Using my Website ##
 Django comes with a built-in server to allow you to view websites. If you'd like to see my website simply download the avaliable files and save them to a folder on your computer. Open your terminal program and using the `cd` command, travel to the directory where the website is downloaded. Once there run the command ```python manage.py runserver```. This will open up a server so you can view the website. Once ther server is open, open your webrowser to http://127.0.0.1:8000/portfolio/ and view the website.
 
-SPECIAL NOTE: PLEASE ASK FOR SETTINGS.PY. WITHOUT THIS FILE THE WEBSITE WILL NOT WORK!
+Special Note: Please ask for settings.py. Without this file, the website will not work
 
 ## Photos of Website
 
